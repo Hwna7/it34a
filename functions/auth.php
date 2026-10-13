@@ -1,10 +1,3 @@
-<?php
-
-function redirect($path){
-    header("Location: ".BASE_URL.$path);
-    exit;
-}
-
 function loginUser($pdo, $login, $password){
     // Application quer #2
     $sql = "

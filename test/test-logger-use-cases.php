@@ -57,7 +57,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST'){
     if($success){
         echo"<p> Activity: ". htmlspecialchars($action)  .
              "Status: " . htmlspecialchars($status) .
-             "Log inserted successfully</p>";
+             "Log inserted successfully.</p>";
     } else {
         echo "<p>Failed to insert activity.</p>";
     }
