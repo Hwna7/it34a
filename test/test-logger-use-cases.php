@@ -44,7 +44,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST'){
 
     $action = $_POST['action'] ?? 'test_activity';
 
-    $status = random_int(0, 1) === 1 ? 'success' : 'failed';git
+    $status = random_int(0, 1) === 1 ? 'success' : 'failed';
 
     $success = logActivity(
         $pdo,
