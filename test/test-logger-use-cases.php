@@ -44,7 +44,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST'){
 
     $action = $_POST['action'] ?? 'test_activity';
 
-    $status = random_int(0, 1) === 1 ? 'success' : 'failed';git
+    $status = random_int(0, 1) === 1 ? 'success' : 'failed';
 
     $success = logActivity(
         $pdo,
@@ -57,7 +57,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST'){
     if($success){
         echo"<p> Activity: ". htmlspecialchars($action)  .
              "Status: " . htmlspecialchars($status) .
-             "Log inserted successfully</p>";
+             "Log inserted successfully.</p>";
     } else {
         echo "<p>Failed to insert activity.</p>";
     }
